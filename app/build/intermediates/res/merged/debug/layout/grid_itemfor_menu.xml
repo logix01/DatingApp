@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:gravity="right" android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/menu_grid_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/stat_notify_chat" />
+
+    <TextView
+        android:id="@+id/menu_grid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Contact" />
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/grid_itemfor_menu.xml -->

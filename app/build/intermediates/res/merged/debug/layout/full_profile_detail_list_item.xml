@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/four"
+        android:paddingBottom="@dimen/four"
+        android:text="Heading"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/next_done_text_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/heading">
+
+        <ImageView
+            android:id="@+id/bullet"
+            android:layout_width="@dimen/eight"
+            android:layout_height="@dimen/eight"
+            android:src="@drawable/bullet_white"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/heading"/>
+
+        <TextView
+            android:id="@+id/profile_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bullet"
+            android:paddingLeft="@dimen/eight"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/full_profile_detail_list_item.xml -->

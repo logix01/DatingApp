@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <RelativeLayout
+        android:id="@+id/message_noti_tones_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <com.xabber.android.ui.register.settings.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="MESSAGE NOTIFICATIONS TONES" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:id="@+id/message_one_to_one_noti_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical" >
+
+        <com.xabber.android.ui.register.settings.CustomTextView
+            android:id="@+id/one_to_one_noti_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ONE-TO-ONE NOTIFICATIONS" />
+
+        <CheckBox
+            android:id="@+id/one_to_one_noti_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <com.xabber.android.ui.register.settings.CustomTextView
+            android:id="@+id/one_to_one_noti_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one_to_one_noti_title"
+            android:text="Notification Tone" />
+
+        <com.xabber.android.ui.register.settings.CustomTextView
+            android:id="@+id/one_to_one_noti_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one_to_one_noti_subtitle"
+            android:text="tone name"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:id="@+id/group_noti_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical" >
+
+        <com.xabber.android.ui.register.settings.CustomTextView
+            android:id="@+id/group_noti_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GROUP NOTIFICATIONS" />
+
+        <CheckBox
+            android:id="@+id/group_noti_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <com.xabber.android.ui.register.settings.CustomTextView
+            android:id="@+id/group_noti_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_noti_title"
+            android:text="Notification Tone" />
+
+        <com.xabber.android.ui.register.settings.CustomTextView
+            android:id="@+id/group_noti_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_noti_subtitle"
+            android:text="tone name"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddd" />
+
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/activity_notifications.xml -->

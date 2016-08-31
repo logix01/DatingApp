@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkred"
+    android:padding="@dimen/sixteen">
+
+    <RelativeLayout
+        android:id="@+id/ful_profile_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/full_profile_avatar"
+            android:layout_width="@dimen/hundred"
+            android:layout_height="@dimen/hundredtwenty"
+            android:layout_marginRight="@dimen/eight"
+            android:scaleType="fitXY"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/full_profile_shortlist_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/full_profile_shortlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shortlisted_disable"/>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:id="@+id/full_profile_shortlist_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/full_profile_avatar"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/full_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/full_profile_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28 / Male/ Gurgaon"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/full_profile_single_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handsome"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ful_profile_top_layout"
+        android:background="@color/fullprofiledivider"
+        android:layout_marginTop="@dimen/sixteen"/>
+
+    <RelativeLayout
+        android:id="@+id/full_profile_audio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        android:layout_marginTop="@dimen/sixteen">
+
+        <LinearLayout
+            android:id="@+id/audio_available_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/full_profile_audio_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_audio_icon"/>
+
+            <TextView
+                android:id="@+id/audio_available_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/eight"
+                android:text="Audio Available"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/full_profile_listen_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/thirtytwo"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/green_round_bg"
+            android:layout_centerVertical="true"
+            android:text="Listen"
+            android:textColor="@android:color/white"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/full_profile_audio_progress"
+            android:layout_width="@dimen/thirtytwo"
+            android:layout_height="@dimen/thirtytwo"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/full_profile_audio_layout"
+        android:background="@color/fullprofiledivider"
+        android:layout_marginTop="@dimen/sixteen"/>
+
+    <RelativeLayout
+        android:id="@+id/full_profile_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider2"
+        android:layout_above="@+id/say_write_layout"
+        android:layout_marginTop="@dimen/sixteen">
+
+        <ListView
+            android:id="@+id/full_profile_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/darkred"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/four"></ListView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/say_write_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/sixteen">
+
+        <Button
+            android:id="@+id/full_profile_say_hi_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/say_hi_icon"/>
+
+        <Button
+            android:id="@+id/full_profile_write_hi_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/write_hi_icon"/>
+
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/activity_full_profile.xml -->

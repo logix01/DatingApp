@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/load_more_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AA000000"
+        android:text="Load More Messages"
+        android:textColor="@color/white"
+        android:visibility="visible"/>
+
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/chat_viewer_item_list_header.xml -->

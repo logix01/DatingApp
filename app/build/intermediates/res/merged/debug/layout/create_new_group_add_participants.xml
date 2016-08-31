@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="20dp" >
+
+
+
+    <Button
+        android:id="@+id/group_participants_add"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:text="Add Friends" />
+
+    <ListView
+        android:layout_above="@+id/add_layout"
+        android:id="@+id/group_participants_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_participants_add" />
+
+
+    <RelativeLayout
+        android:id="@id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/banner_ad_layout"
+            />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/create_new_group_add_participants.xml -->

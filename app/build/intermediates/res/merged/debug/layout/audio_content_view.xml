@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Kontalk Android client
+     Copyright (C) 2014 Kontalk Devteam <devteam@kontalk.org>
+
+     This program is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<com.xabber.android.ui.newchatstyle.AudioContentView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_list_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/seekbar_mainlayout"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_media_play"
+                android:text="play"
+                android:visibility="invisible" />
+
+            <SeekBar
+                android:id="@+id/songProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+
+                android:layout_toLeftOf="@+id/audio_chatTimer"
+
+                android:layout_toRightOf="@+id/btnPlay"
+                android:indeterminate="false" />
+
+
+            <Chronometer
+                android:id="@+id/audio_chatTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="3dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:indeterminate="false" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</com.xabber.android.ui.newchatstyle.AudioContentView>
+
+<!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/audio_content_view.xml -->

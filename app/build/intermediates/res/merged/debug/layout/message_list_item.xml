@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Kontalk Android client
+     Copyright (C) 2014 Kontalk Devteam <devteam@kontalk.org>
+
+     This program is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<com.xabber.android.ui.newchatstyle.MessageListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_list_item"
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dip"
+    android:paddingLeft="5dp"
+    android:paddingTop="2dip">
+
+    <TextView
+        android:id="@+id/date_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/date_stamp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/date_stamp"
+
+        android:textColor="#dddddd"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/message_view_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_header"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/balloon_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.61" />
+
+            <com.xabber.android.ui.newchatstyle.MessageContentLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:maxWidth="@dimen/message_text_width"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/status_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:baselineAligned="false"
+                android:gravity="right|bottom"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/status_indicator"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:adjustViewBounds="false" android:src="@drawable/ic_msg_pending"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/warning_icon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_client_gajim"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/date_view"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dateview_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.xabber.android.ui.newchatstyle.MessageListItem>
+<!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/message_list_item.xml -->

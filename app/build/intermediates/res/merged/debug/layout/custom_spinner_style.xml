@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+android:id="@+android:id/text1"
+style="@style/MyTheme"
+android:paddingLeft="15dip"
+android:singleLine="true"
+android:textColor="@android:color/black"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+    android:background="@color/app_hedder_color"
+android:ellipsize="marquee" /><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/custom_spinner_style.xml -->

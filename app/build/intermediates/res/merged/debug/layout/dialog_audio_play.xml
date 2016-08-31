@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginRight="@dimen/eight"
+        android:paddingBottom="@dimen/sixteen"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/record_dialog_bg">
+
+        <ImageView
+            android:id="@+id/play_mic_image"
+            android:layout_width="@dimen/hundred"
+            android:layout_height="@dimen/hundred"
+            android:src="@drawable/mic1"
+            android:layout_marginTop="@dimen/seventytwo"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/play_mic_progress"
+            android:layout_width="@dimen/hundred"
+            android:layout_height="@dimen/hundred"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mic_progress"
+            android:layout_marginTop="@dimen/seventytwo"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/play_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/play_mic_image">
+
+            <Chronometer
+                android:id="@+id/play_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/next_done_text_size"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/play_timer_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/next_done_text_size"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/play_timer_suffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sec(s)"
+                android:textColor="@color/red"
+                android:textSize="@dimen/next_done_text_size"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/after_play_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/play_time_layout"
+            android:layout_marginTop="@dimen/eight"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fortyeight"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_marginRight="@dimen/eight"
+                android:text="Play"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_orange_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftysix"
+        android:layout_marginTop="@dimen/sixteen"
+        android:background="@color/orange">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/sixteen"
+            android:text="Introduction"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="@dimen/fiftysix"
+            android:layout_height="@dimen/fiftysix"
+            android:background="@drawable/cancel_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/sixteen"
+            android:textColor="@color/orange"/>
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/dialog_audio_play.xml -->

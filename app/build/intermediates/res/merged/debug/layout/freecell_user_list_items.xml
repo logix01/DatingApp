@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/conv_list_margin_left">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="@dimen/inviteUser_list_row_item_imageframe"
+        android:layout_height="@dimen/inviteUser_list_row_item_imageframe"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/user_bg_icon">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="@dimen/inviteUser_list_row_item_image"
+            android:layout_height="@dimen/inviteUser_list_row_item_image"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+
+    </RelativeLayout>
+
+
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:singleLine="true"
+        android:text="999999999"
+        android:textAppearance="@style/TextAppearance.AppCompat.Base.SearchResult.Subtitle"></com.rockerhieu.emojicon.EmojiconTextView>
+
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/relativeLayout2"
+        android:layout_toLeftOf="@+id/message_time"
+        android:layout_toRightOf="@+id/relativeLayout2"
+        android:singleLine="true"
+        android:text="testingggggg"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"></com.rockerhieu.emojicon.EmojiconTextView>
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:paddingRight="5dp"
+        android:text="Mobile"
+
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/freecell_user_list_items.xml -->

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dotted"
+        android:padding="@dimen/four"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_marginRight="@dimen/sixteen"
+        android:layout_marginBottom="@dimen/four">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/mymatch_list_avatar_image"
+                android:layout_width="@dimen/hundred"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/mymatches_list_avatar_audio_available"
+                android:layout_width="@dimen/thirtytwo"
+                android:layout_height="@dimen/thirtytwo"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/four"
+                android:src="@drawable/red_audio_icon"/>
+
+            <RelativeLayout
+                android:id="@+id/mymatch_list_avatar_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/eight"
+                android:layout_alignTop="@+id/mymatch_list_avatar_image"
+                android:layout_alignBottom="@+id/mymatch_list_avatar_image"
+                android:layout_toRightOf="@+id/mymatch_list_avatar_image">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/mymatch_list_avatar_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/mymatch_list_avatar_full_profile"
+                        android:layout_toLeftOf="@+id/mymatch_list_avatar_full_profile"
+                        android:singleLine="true"
+                        android:text="Name"
+                        android:textColor="@color/white"/>
+
+                    <RelativeLayout
+                        android:id="@+id/mymatch_list_avatar_full_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fortyeight"
+                        android:background="@drawable/white_translucent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:id="@+id/mymatch_list_avatar_full_profile_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="  View Full Profile  "
+                            android:textColor="@color/red"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/mymatch_list_avatar_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mymatch_list_avatar_full_profile"
+                        android:singleLine="true"
+                        android:text="24 / Male / Gurgaon"
+                        android:layout_marginTop="@dimen/eight"
+                        android:layout_marginBottom="@dimen/eight"
+                        android:textColor="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mymatch_list_avatar_detail">
+
+                        <RelativeLayout
+                            android:id="@+id/mymatch_list_avatar_say_hi"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyeight"
+                            android:background="@drawable/white_translucent"
+                            android:layout_marginRight="@dimen/two"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/mymatch_list_avatar_say_hi_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="  Say Hi"
+                                android:textColor="@color/red"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/mymatch_list_avatar_write_hi"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyeight"
+                            android:background="@drawable/white_translucent"
+                            android:layout_marginLeft="@dimen/two"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/mymatch_list_avatar_write_hi_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="  Write Hi"
+                                android:textColor="@color/red"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/mymatch_list_item_odd.xml -->

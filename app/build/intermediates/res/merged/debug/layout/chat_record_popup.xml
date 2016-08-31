@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_record_popup_bg"
+    android:id="@+id/popup_element"
+    android:padding="@dimen/sixteen">
+
+    <ImageView
+        android:id="@+id/mic_progress"
+        android:layout_width="@dimen/hundred"
+        android:layout_height="@dimen/hundred"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mic_progress"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/record_time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mic_image"
+        android:visibility="visible">
+
+        <Chronometer
+            android:id="@+id/chat_record_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/next_done_text_size"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/record_timer_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textColor="@color/darkred"
+            android:textSize="@dimen/next_done_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/record_timer_suffix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sec(s)"
+            android:textColor="@color/darkred"
+            android:textSize="@dimen/next_done_text_size"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/chat_record_popup.xml -->

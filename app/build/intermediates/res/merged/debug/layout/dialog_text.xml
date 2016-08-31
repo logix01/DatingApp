@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginRight="@dimen/eight"
+        android:paddingBottom="@dimen/sixteen"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/record_dialog_bg">
+
+        <EditText
+            android:id="@+id/editext_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:layout_marginTop="@dimen/seventytwo"
+            android:layout_marginLeft="@dimen/two"
+            android:layout_marginRight="@dimen/two"
+            android:padding="@dimen/sixteen"
+            android:background="@color/white"
+            android:hint="Write message here"/>
+
+        <LinearLayout
+            android:id="@+id/send_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/editext_message"
+            android:layout_marginTop="@dimen/eight"
+            android:paddingLeft="@dimen/sixteen"
+            android:paddingRight="@dimen/sixteen"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fortyeight"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_marginRight="@dimen/eight"
+                android:text="Send"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_orange_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftysix"
+        android:layout_marginTop="@dimen/sixteen"
+        android:background="@color/orange">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/sixteen"
+            android:text="Write Hi"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="@dimen/fiftysix"
+            android:layout_height="@dimen/fiftysix"
+            android:background="@drawable/cancel_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/sixteen"
+            android:textColor="@color/orange"/>
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/dialog_text.xml -->

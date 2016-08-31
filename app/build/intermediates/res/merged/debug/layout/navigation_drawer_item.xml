@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/nav_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:background="@color/nav_bg">
+
+        <ImageView
+            android:id="@+id/nav_image"
+            android:layout_width="@dimen/thirtytwo"
+            android:layout_height="@dimen/thirtytwo"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/eight"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/nav_image"
+            android:text="Hello"
+            android:textColor="@color/white"
+            android:textSize="@dimen/next_done_text_size"/>
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/navigation_drawer_item.xml -->

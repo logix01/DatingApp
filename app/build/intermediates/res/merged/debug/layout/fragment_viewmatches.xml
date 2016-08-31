@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ListView
+        android:id="@+id/view_matches_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/four"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="@dimen/sixteen"
+        android:cacheColorHint="@color/white"></ListView>
+
+    <!--<LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/sixteen">
+
+        <Button
+            android:id="@+id/view_more_matches"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/about_us_tab"
+            android:text="View More"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>-->
+
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/fragment_viewmatches.xml -->

@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/white" />
+
+    <stroke
+        android:width="@dimen/four"
+        android:color="@color/orange" />
+</shape><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/drawable/white_orange_border.xml -->

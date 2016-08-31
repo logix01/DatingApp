@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="#62A4AE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/profile_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/abc_ic_ab_back_holo_dark"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:text="Profile Info"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/next_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/right_mark_icon"
+            android:drawablePadding="5dp"
+            android:text="Next"
+            android:textColor="#fff"></Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/profile_frame"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/profile_pic_frame">
+
+            <ImageView
+                android:id="@+id/proifle_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/assest_profile_frame" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/profile_frame"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Provide your name and Optional photo."
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/profile_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_name"
+                android:layout_marginTop="10dp"
+                android:hint="Enter your name"
+                android:inputType="textCapSentences|textCapWords"
+                android:maxLength="25"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/setstatus"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shadow_small"
+        android:hint="Set your status here"
+        android:inputType="textCapSentences|textCapWords"
+        android:padding="10dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/your_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Registered Number:"
+        android:drawableLeft="@drawable/mobile_icon_small"
+        android:drawablePadding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/banner_ad_layout"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

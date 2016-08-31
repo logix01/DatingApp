@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/green" />
+
+    <corners
+        android:topLeftRadius="@dimen/four"
+        android:bottomLeftRadius="@dimen/four"
+        android:topRightRadius="@dimen/four"
+        android:bottomRightRadius="@dimen/four" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/green" />
+</shape><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/drawable/green_round_bg.xml -->

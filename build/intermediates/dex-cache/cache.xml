@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/libs/universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-77baab1661435321974bc6e23d03d82933ad7136.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/exploded-aar/com.facebook.android/facebook/3.21.1/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="61141f9cac348ae4b6681004e26b30bf14006ccb">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/classes-bbdc598b68ccb6b3e273c91ad2bfd5a48ce7aaa5.jar" />
+    </item>
+    <item
+        jar="/home/enuke/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-9e14478faf994b322406f9d79df305ee474b9f1e.jar" />
+    </item>
+    <item
+        jar="/home/enuke/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-297a0178232c7a5ef5f39ded0b6e638c26daec01.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/exploded-aar/blinder/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="858358e0332735e505cd65d3d9043e2935c6616f">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/classes-f6d995b70c3629f8278947db6a01804de9ce01bf.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/libs/greendao-1.3.7.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="dda08161d004c4df96938da6909f1c2b96cd33c8">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/greendao-1.3.7-0cd15bc475191634f888091569bfd10c45db7092.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/classes-3524d883cf7552d250c7c982928e8ff7a3314984.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/classes-5a75dfc0fd0611728c97e57764ad37702610a16e.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-35f3af2049bfe85aa01053004e9f17364539d8f6.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/libs/otr4j.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d450e112f833ec738d59533ad91ef2cb9435c1ef">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/otr4j-68e10e620e3e3dc0d282b58e0ba424b7ce906379.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/libs/volley.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/volley-bca55fb8053d3d84ac0d3d86b1fa4ffd9a829c0a.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/classes-046a67621978e90e919343ee4bfc09047829e745.jar" />
+    </item>
+    <item
+        jar="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/home/enuke/BlinderMainApp/blinder/app/build/intermediates/pre-dexed/debug/classes-63731725c365be229f3b0084d18c99d3afa587fa.jar" />
+    </item>
+
+</items>

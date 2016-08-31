@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/profile_frame"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/profile_pic_frame" >
+
+            <ImageView
+                android:id="@+id/group_image"
+                android:layout_width="80dp" android:scaleType="fitXY"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/assest_profile_frame" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/group_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_frame"
+            android:paddingLeft="10dp"
+            android:text="Please provide group subject and optional group icon"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_frame"
+            android:hint="Enter group name"
+            android:maxLength="25"
+            android:inputType="textCapSentences|textCapWords"
+            android:paddingTop="20dp" />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/banner_ad_layout"
+            />
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/create_new_group.xml -->

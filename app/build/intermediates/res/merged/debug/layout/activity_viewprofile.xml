@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_profile_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/say_write_layout"
+        android:background="@drawable/white_orange_border"
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:layout_marginLeft="@dimen/thirtytwo"
+        android:layout_marginRight="@dimen/thirtytwo">
+
+        <ImageView
+            android:id="@+id/profile_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/shortlisted_main_layout"/>
+
+        <RelativeLayout
+            android:id="@+id/shortlisted_main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight">
+
+            <LinearLayout
+                android:id="@+id/shortlisted_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/view_profile_shortlisted_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shortlisted_disable"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/four"
+                    android:text="Shortlisted"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_marginRight="@dimen/eight">
+
+            <LinearLayout
+                android:id="@+id/audio_available_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/view_profile_audio_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile_audio_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/four"
+                    android:text="Audio \n Available"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:id="@+id/audio_progress"
+                android:layout_width="@dimen/thirtytwo"
+                android:layout_height="@dimen/thirtytwo"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/say_write_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:orientation="horizontal"
+        android:layout_above="@+id/view_profile_name"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_marginRight="@dimen/sixteen"
+        android:layout_marginBottom="@dimen/eight">
+
+        <Button
+            android:id="@+id/say_hi_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/say_hi_icon"/>
+
+        <Button
+            android:id="@+id/write_hi_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/write_hi_icon"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/view_profile_detail"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/next_done_text_size"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/view_profile_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/view_profile_single_word"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/next_done_text_size"/>
+
+    <TextView
+        android:id="@+id/view_profile_single_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/view_profile_match_hint_layout"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/next_done_text_size"/>
+
+    <LinearLayout
+        android:id="@+id/view_profile_match_hint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/view_full_profile_button"
+        android:layout_marginLeft="@dimen/fortyeight"
+        android:layout_marginRight="@dimen/fortyeight">
+
+        <TextView
+            android:id="@+id/view_profile_match_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/match_hint_icon"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/next_done_text_size"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/view_full_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_round_bg"
+        android:layout_marginLeft="@dimen/thirtytwo"
+        android:layout_marginRight="@dimen/thirtytwo"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:text="View Full Profile"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/activity_viewprofile.xml -->

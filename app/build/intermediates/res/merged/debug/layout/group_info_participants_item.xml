@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:id="@+id/avatar_rc"
+        android:layout_width="@dimen/inviteUser_list_row_item_imageframe"
+        android:layout_height="@dimen/inviteUser_list_row_item_imageframe"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/user_bg_icon">
+
+        <ImageView
+            android:id="@+id/inviteuser_list_item_image"
+            android:layout_width="@dimen/inviteUser_list_row_item_image"
+            android:layout_height="@dimen/inviteUser_list_row_item_image"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/name_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/adminbtn"
+        android:layout_toRightOf="@+id/avatar_rc"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/inviteuser_list_item_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" android:visibility="gone"
+            android:text="999999999" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/adminbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/registration_background"
+        android:text="Admin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/inviteuser_list_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:singleLine="true"
+        android:text="testinggggggnnnnnnnnnnnnnjnxjkkkkkkkkkkkkkkkkkkkkkkkkkknnnjnn"
+        android:layout_toLeftOf="@+id/adminbtn"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/name_box"
+        android:layout_alignStart="@+id/name_box" />
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/group_info_participants_item.xml -->

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (c) 2013, Redsolution LTD. All rights reserved.
+
+     This file is part of Xabber project; you can redistribute it and/or
+     modify it under the terms of the GNU General Public License, Version 3.
+
+     Xabber is distributed in the hope that it will be useful, but
+     WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+     See the GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License,
+     along with this program. If not, see http://www.gnu.org/licenses/.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip"
+
+    >
+
+    <RelativeLayout android:id="@+id/bubble_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+        <ImageView
+            android:id="@+id/incomingtriagle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/chat_bubble_1" />
+
+        <RelativeLayout
+            android:id="@+id/bubleBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:padding="5dp"
+
+            android:layout_toRightOf="@+id/incomingtriagle"
+           android:layout_toLeftOf="@+id/outgoing_triangle"
+            android:background="@drawable/textbox_bg">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_marginLeft="4dip"
+                android:src="@drawable/avatar_1_1" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/avatar"
+
+                android:textColor="@android:color/white"
+                android:paddingLeft="4dip" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/outgoing_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="3dp"
+
+            android:layout_alignParentRight="true"
+            android:src="@drawable/chat_bubble_2" />
+    </RelativeLayout>
+
+</RelativeLayout>
+<!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/chat_viewer_message.xml -->

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/select_all_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#ebebeb"
+        >
+        <CheckBox 
+            android:id="@+id/invite_selectAll"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Select All"
+            />
+        <ImageView 
+            android:id="@+id/invite_user_inviteButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/invite_user_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nomatchfound"
+        android:text="No Matches found"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <ListView 
+        android:id="@+id/invite_user_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/invite_user_list.xml -->

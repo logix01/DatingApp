@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/message_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:padding="@dimen/eight">
+
+        <ImageView
+            android:id="@+id/message_avatar_image"
+            android:layout_width="@dimen/fiftysix"
+            android:layout_height="@dimen/fiftysix"
+            android:background="@color/white"
+            android:layout_margin="@dimen/eight"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/message_avatar_image"
+            android:layout_toLeftOf="@+id/chat_time"
+            android:paddingLeft="@dimen/four"
+            android:paddingRight="@dimen/eight">
+
+            <TextView
+                android:id="@+id/message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown"
+                android:textColor="@color/white"
+                android:textSize="@dimen/next_done_text_size"/>
+
+            <TextView
+                android:id="@+id/message_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/next_done_text_size"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="@dimen/eight"
+            android:text="time"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/chat_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/message_avatar_image"
+            android:paddingRight="@dimen/eight"
+            android:text="NEW"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/messages_list_item.xml -->

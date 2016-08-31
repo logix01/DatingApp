@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/sixteen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/eight"
+        android:gravity="center"
+        android:text="Choose location"
+        android:textSize="@dimen/next_done_text_size"
+        android:textColor="@color/darkred"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/eight"
+        android:gravity="center"
+        android:text="Get your location from:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fb_location"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/fortyeight"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/green"
+            android:text="Facebook"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/current_location"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/fortyeight"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/green"
+            android:text="Current"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/dialog_location.xml -->

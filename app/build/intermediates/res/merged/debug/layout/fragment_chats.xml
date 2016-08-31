@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/sixteen">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/chats_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/about_us_tab"
+                android:text="Chats"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/waiting_for_response_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_disable"
+                android:text="Waiting for response"
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/chats_arrow"
+                android:layout_width="@dimen/eight"
+                android:layout_height="match_parent"
+                android:background="@drawable/arrow_aboutyou"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chats_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/four"
+        android:divider="@android:color/transparent"
+        android:cacheColorHint="@color/white"></ListView>
+
+    <ListView
+        android:id="@+id/waiting_for_response_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/four"
+        android:divider="@android:color/transparent"
+        android:cacheColorHint="@color/white"
+        android:visibility="gone"></ListView>
+
+</LinearLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/fragment_chats.xml -->

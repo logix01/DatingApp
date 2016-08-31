@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/single_word_desc_grid_item_bg"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/sixteen"
+            android:text="Notification received"
+            android:textSize="@dimen/next_done_text_size"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/eight">
+
+            <Button
+                android:id="@+id/dialog_ok_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fortyeight"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_margin="@dimen/four"
+                android:text="OK"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/dialog_cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fortyeight"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_margin="@dimen/four"
+                android:text="Cancel"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/activity_dialog.xml -->

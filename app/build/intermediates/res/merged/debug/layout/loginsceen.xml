@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+<RelativeLayout android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/agree_continue_ll"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_above="@+id/logo_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome To Freecell"
+            android:layout_marginBottom="18dp"
+            android:textColor="#DB214D"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:id="@id/logo_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/loginscreen_logo"
+                android:layout_height="@dimen/loginscreen_logo"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_iphone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_android" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/terms_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/terms_services"
+            android:textColor="#42919E"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/agree_continue_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/loginscreen_agree_Continue_grey_height"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/loginscreen_agree_Continue_red_margin_width"
+        android:paddingRight="@dimen/loginscreen_agree_Continue_red_margin_width"
+        android:background="#3d3a3a"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/agree_continue"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/loginscreen_agree_Continue_red_height"
+            android:layout_marginLeft="@dimen/loginscreen_agree_Continue_red_margin_width"
+            android:layout_marginRight="@dimen/loginscreen_agree_Continue_red_margin_width"
+            android:background="@drawable/selector_button"
+            android:text="Agree and Continue"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>
+    <ImageView android:id="@+id/sp_log"
+        android:layout_width="200dp" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:visibility="gone"
+        android:layout_height="wrap_content" android:src="@drawable/logo" />
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/loginsceen.xml -->

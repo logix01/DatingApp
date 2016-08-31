@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical"
+        android:layout_above="@+id/add_layout">
+
+        <RelativeLayout
+            android:background="@drawable/shadow_small"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/profile_frame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/profile_pic_frame">
+
+                <ImageView
+                    android:id="@+id/proifle_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/assest_profile_frame" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/profile_frame"
+                android:orientation="vertical">
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/relativeLayout2"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/relativeLayout2"
+                android:layout_marginLeft="10dp"
+                android:text="Group Name"
+                android:maxLength="25"
+                android:inputType="textCapSentences|textCapWords"
+
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/created_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/group_name"
+                android:layout_alignStart="@+id/group_name"
+                android:layout_below="@+id/group_name"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+
+                android:text="Created : 12/5/2014"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/createdby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/created_date"
+                android:layout_alignStart="@+id/created_date"
+                android:layout_below="@+id/created_date"
+
+                android:text="Created by You"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" android:padding="10dp"
+            android:background="@drawable/shadow_small">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Participants" android:textColor="@android:color/black" android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <View
+                android:layout_width="match_parent" android:layout_below="@+id/textView2" android:layout_marginTop="2dp"
+                android:layout_height="2dp" android:background="@android:color/darker_gray"
+                android:id="@+id/view" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/participants_list"
+                android:layout_below="@+id/view"
+                android:layout_alignLeft="@+id/view"
+                android:layout_alignStart="@+id/view"
+                android:layout_above="@+id/Add_Participants" />
+            <Button
+                android:layout_width="fill_parent" android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" android:text="Add Participants"
+                android:id="@+id/Add_Participants" android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/banner_ad_layout"
+            />
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/layout/group_info.xml -->

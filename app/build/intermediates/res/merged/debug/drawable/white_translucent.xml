@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="#80FFFFFF" />
+
+    <corners
+        android:topLeftRadius="@dimen/four"
+        android:bottomLeftRadius="@dimen/four"
+        android:topRightRadius="@dimen/four"
+        android:bottomRightRadius="@dimen/four" />
+</shape><!-- From: file:/home/enuke/BlinderMainApp/blinder/app/src/main/res/drawable/white_translucent.xml -->

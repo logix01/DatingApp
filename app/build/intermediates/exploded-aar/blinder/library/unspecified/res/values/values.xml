@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/enuke/BlinderMainApp/blinder/library/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="horizontal_divider">#8f8f8f</color>
+    <color name="horizontal_vertical">#8f8f8f</color>
+    <declare-styleable name="Emojicon"><attr format="dimension" name="emojiconSize"/><attr format="integer" name="emojiconTextStart"/><attr format="integer" name="emojiconTextLength"/></declare-styleable>
+    <!-- From: file:/home/enuke/BlinderMainApp/blinder/library/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Emojicon</string>
+</resources>
